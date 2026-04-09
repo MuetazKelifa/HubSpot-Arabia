@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HubSpot Arabia - CRM Built for Saudi Business</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;color:#1a1a1a;background:#fff;line-height:1.6}
+.container{max-width:960px;margin:0 auto;padding:0 24px}
+
+/* NAV */
+nav{background:#1a1a1a;padding:14px 0;position:sticky;top:0;z-index:100}
+nav .container{display:flex;justify-content:space-between;align-items:center}
+nav a{color:#aaa;text-decoration:none;font-size:14px;font-weight:500;margin-left:28px;transition:color .2s}
+nav a:hover,nav a.active{color:#FF7A59}
+.logo{color:#FF7A59;font-size:20px;font-weight:800;letter-spacing:-0.5px}
+.nav-links{display:flex;align-items:center}
+
+/* SECTIONS */
+section{padding:72px 0}
+section:nth-child(odd){background:#fafafa}
+h1{font-size:42px;font-weight:800;line-height:1.15;letter-spacing:-1px;margin-bottom:16px}
+h2{font-size:28px;font-weight:700;margin-bottom:24px;letter-spacing:-0.5px}
+h3{font-size:18px;font-weight:700;margin-bottom:8px}
+p{color:#444;font-size:15px;margin-bottom:16px}
+.accent{color:#FF7A59}
+.tag{display:inline-block;background:#FF7A59;color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px}
+
+/* HERO */
+.hero{background:#1a1a1a;color:#fff;padding:96px 0 80px;text-align:center}
+.hero h1{color:#fff;font-size:48px}
+.hero h1 span{color:#FF7A59}
+.hero p{color:#bbb;font-size:18px;max-width:600px;margin:0 auto 32px}
+.cta{display:inline-block;background:#FF7A59;color:#fff;font-size:15px;font-weight:700;padding:14px 36px;border-radius:6px;text-decoration:none;transition:background .2s}
+.cta:hover{background:#e5603e}
+.cta-outline{background:transparent;border:2px solid #FF7A59;color:#FF7A59;margin-left:12px}
+.cta-outline:hover{background:#FF7A59;color:#fff}
+.hero-stats{display:flex;justify-content:center;gap:48px;margin-top:40px}
+.hero-stats div{text-align:center}
+.hero-stats .num{font-size:28px;font-weight:800;color:#FF7A59}
+.hero-stats .lbl{font-size:12px;color:#888;text-transform:uppercase;letter-spacing:1px}
+
+/* CARDS */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:32px}
+.card{background:#fff;border:1px solid #eee;border-radius:10px;padding:28px;transition:box-shadow .2s}
+.card:hover{box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.card-icon{font-size:28px;margin-bottom:12px}
+
+/* PRICING */
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:32px}
+.price-card{background:#fff;border:1px solid #eee;border-radius:10px;padding:32px;text-align:center;position:relative}
+.price-card.featured{border:2px solid #FF7A59;transform:scale(1.03)}
+.price-card.featured .tag{position:absolute;top:-12px;left:50%;transform:translateX(-50%)}
+.price{font-size:36px;font-weight:800;margin:16px 0 4px}
+.price span{font-size:14px;font-weight:400;color:#888}
+.price-feat{text-align:left;margin:20px 0;font-size:13px;color:#555}
+.price-feat li{margin-bottom:8px;list-style:none;padding-left:20px;position:relative}
+.price-feat li::before{content:"✓";position:absolute;left:0;color:#FF7A59;font-weight:700}
+
+/* TRUST */
+.trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:32px}
+.trust-item{background:#fff;border:1px solid #eee;border-radius:10px;padding:28px}
+.trust-quote{font-style:italic;color:#555;font-size:14px;margin-bottom:12px}
+.trust-name{font-weight:700;font-size:13px;color:#1a1a1a}
+
+/* FOOTER */
+footer{background:#1a1a1a;color:#888;padding:32px 0;text-align:center;font-size:13px}
+
+@media(max-width:768px){
+  .cards,.pricing-grid,.trust-grid{grid-template-columns:1fr}
+  .hero h1{font-size:32px}
+  .hero-stats{flex-direction:column;gap:16px}
+  .price-card.featured{transform:none}
+  nav .nav-links{display:none}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="logo">HubSpot Arabia</div>
+    <div class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#product">Product</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#trust">Trust</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="tag">Now in Saudi Arabia</div>
+    <h1>Grow your business with the<br><span>CRM built for Saudi Arabia</span></h1>
+    <p>Marketing, sales, and customer service tools designed for the GCC market. Arabic-first. SAR pricing. WhatsApp-native. Powered by AI.</p>
+    <a href="#pricing" class="cta">Start Free</a>
+    <a href="#product" class="cta cta-outline">See Features</a>
+    <div class="hero-stats">
+      <div><div class="num">288K+</div><div class="lbl">Customers Globally</div></div>
+      <div><div class="num">135+</div><div class="lbl">Countries</div></div>
+      <div><div class="num">SAR</div><div class="lbl">Local Pricing</div></div>
+      <div><div class="num">24/7</div><div class="lbl">Arabic Support</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IS IT FOR -->
+<section>
+  <div class="container">
+    <div class="tag">Built for You</div>
+    <h2>Who is HubSpot Arabia for?</h2>
+    <p>We help small and mid-sized businesses in Saudi Arabia and the GCC grow better with tools they can actually use — in Arabic, priced in SAR, and connected to WhatsApp.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">🏗️</div>
+        <h3>Startups & SMBs</h3>
+        <p>New businesses born out of Vision 2030 — fintech, logistics, e-commerce, real estate, tourism. Start free, scale as you grow.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📈</div>
+        <h3>Growing B2B Companies</h3>
+        <p>Companies with 2-200 employees outgrowing spreadsheets and WhatsApp groups. Need a real CRM without Salesforce complexity.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🤝</div>
+        <h3>Partner Agencies</h3>
+        <p>Marketing and consulting agencies serving Saudi clients. Use HubSpot for your clients and earn referral revenue through our partner program.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT -->
+<section id="product">
+  <div class="container">
+    <div class="tag">Product</div>
+    <h2>One platform. Everything you need.</h2>
+    <p>HubSpot Arabia combines marketing, sales, and customer service in a single platform — with full Arabic support and tools built for how Saudi businesses actually work.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">📢</div>
+        <h3>Marketing Hub</h3>
+        <p>Arabic email campaigns, social media management, SEO tools, landing pages, and AI-powered content creation in Arabic with Breeze.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💼</div>
+        <h3>Sales Hub</h3>
+        <p>Deal tracking, pipeline management, meeting scheduling, and WhatsApp Business integration. Manage your entire sales process from one dashboard.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎧</div>
+        <h3>Service Hub</h3>
+        <p>Ticketing, live chat, knowledge base, and AI-powered support agents that respond in Arabic. Keep your customers happy 24/7.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🤖</div>
+        <h3>Breeze AI (Arabic)</h3>
+        <p>AI-powered content generation, lead scoring, data enrichment, and customer support automation — all in Arabic. Your AI teammate that speaks your language.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💳</div>
+        <h3>Commerce Hub</h3>
+        <p>Quotes, invoices, and payments with VAT and Zakat compliance built in. Accept payments in SAR and streamline your quote-to-cash process.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📱</div>
+        <h3>WhatsApp Native</h3>
+        <p>WhatsApp Business API built into every Hub. Chat with leads, send quotes, resolve tickets — all from inside HubSpot. Because that is how Saudi businesses communicate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="container">
+    <div class="tag">Pricing</div>
+    <h2>Simple pricing in Saudi Riyals</h2>
+    <p>Start free. Upgrade when you are ready. No hidden fees. All prices in SAR.</p>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Free CRM</h3>
+        <div class="price">SAR 0<span>/month</span></div>
+        <p style="color:#888;font-size:13px">Free forever. No credit card.</p>
+        <ul class="price-feat">
+          <li>Contact management (up to 1,000)</li>
+          <li>Email tracking</li>
+          <li>Deal pipeline (1)</li>
+          <li>WhatsApp integration</li>
+          <li>Arabic interface</li>
+        </ul>
+        <a href="#" class="cta" style="width:100%;text-align:center;display:block">Get Started Free</a>
+      </div>
+      <div class="price-card featured">
+        <div class="tag">Most Popular</div>
+        <h3>Starter</h3>
+        <div class="price">SAR 60<span>/month</span></div>
+        <p style="color:#888;font-size:13px">~$16/mo. Billed annually.</p>
+        <ul class="price-feat">
+          <li>Everything in Free, plus:</li>
+          <li>Marketing automation</li>
+          <li>Sales automation</li>
+          <li>Multiple deal pipelines</li>
+          <li>Breeze AI assistant</li>
+          <li>VAT-compliant invoicing</li>
+        </ul>
+        <a href="#" class="cta" style="width:100%;text-align:center;display:block">Start with Starter</a>
+      </div>
+      <div class="price-card">
+        <h3>Professional</h3>
+        <div class="price">SAR 2,670<span>/month</span></div>
+        <p style="color:#888;font-size:13px">~$712/mo. For growing teams.</p>
+        <ul class="price-feat">
+          <li>Everything in Starter, plus:</li>
+          <li>Advanced automation workflows</li>
+          <li>Custom reporting</li>
+          <li>Breeze AI agents</li>
+          <li>SEO & content tools</li>
+          <li>Dedicated onboarding</li>
+          <li>Phone support in Arabic</li>
+        </ul>
+        <a href="#" class="cta" style="width:100%;text-align:center;display:block">Talk to Sales</a>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:24px;font-size:13px;color:#888">Annual plans include 2-month discount. Enterprise tier coming soon.</p>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section id="trust">
+  <div class="container">
+    <div class="tag">Trusted Worldwide</div>
+    <h2>Why businesses choose HubSpot</h2>
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="trust-quote">"Once running, the real-time global tracking is a total game-changer for us."</div>
+        <div class="trust-name">Logistics Coordinator, UAE</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-quote">"HubSpot helped us move from spreadsheets to a real CRM in two weeks. The free tier was all we needed to start."</div>
+        <div class="trust-name">Marketing Manager, Riyadh Startup</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-quote">"The partner program gave us recurring revenue and access to HubSpot's training resources. It changed our agency model."</div>
+        <div class="trust-name">Agency Director, Dubai</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-quote">"We evaluated Zoho and Salesforce. HubSpot won because it was the only platform our whole team could use on day one."</div>
+        <div class="trust-name">CEO, Saudi E-commerce Company</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:48px">
+      <h2>Ready to grow your business?</h2>
+      <p>Join 288,000+ businesses worldwide. Start free today.</p>
+      <a href="#pricing" class="cta" style="font-size:16px;padding:16px 48px">Start Free — No Credit Card Needed</a>
+    </div>
+    <div style="display:flex;justify-content:center;gap:48px;margin-top:40px;opacity:.5">
+      <span style="font-weight:700;font-size:14px">NEXA</span>
+      <span style="font-weight:700;font-size:14px">Meticulosity</span>
+      <span style="font-weight:700;font-size:14px">Cactix</span>
+      <span style="font-weight:700;font-size:14px">Oxygen</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>HubSpot Arabia — A V2 Business Design by Muetaz Kelifa Mohammed | BUS6140 Capstone</p>
+    <p style="margin-top:4px">This is a capstone project microsite. Not affiliated with HubSpot, Inc.</p>
+  </div>
+</footer>
+
+</body>
+</html>
